@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Base nodeJS mongodb</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="http://localhost:4000/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://localhost:4000/dist/sweetalert.css">
+
+  </head>
+  <body ng-app="base-mongo" ng-controller="initCtrl">
+    <nav>
+      <div class="nav-wrapper pink darken-4">
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+        <a href="#" class="brand-logo" style="padding-left:2%">Sistemas embebidos</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="/servo">Servo motor</a></li>
+          <li><a href="/about">Sobre</a></li>
+        </ul>
+      </div>
+    </nav>
+    <ul id="slide-out" class="side-nav">
+      <li><div class="userView">
+        <div class="background">
+          <img src="images/office.jpg">
+        </div>
+        <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
+        <a href="#!name"><span class="white-text name">John Doe</span></a>
+        <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+      </div></li>
+      <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+      <li><a href="#!">Second Link</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="subheader">Subheader</a></li>
+      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+    </ul>
+
+    {{{body}}}
+    <div class="fixed-action-btn toolbar">
+      <a class="btn-floating btn-large red">
+        <i class="large material-icons">mode_edit</i>
+      </a>
+      <ul>
+        <li class="waves-effect waves-light"><a href="/servo"><i class="material-icons">albums</i></a></li>
+        <li class="waves-effect waves-light"><a href="/"><i class="material-icons">store</i></a></li>
+        <li class="waves-effect waves-light"><a href="/about"><i class="material-icons">info</i></a></li>
+        <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">attach_file</i></a></li>
+      </ul>
+    </div>
+  </body>
+  <script src="http://localhost:4000/js/build.js"></script>
+  <script src="http://localhost:4000/js/jquery.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="http://localhost:4000/js/materialize.min.js"></script>
+</html>

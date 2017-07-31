@@ -1,0 +1,108 @@
+<div ng-controller="homeCtrl">
+  <!--<div class="container" ng-init="init()">-->
+  <!--<div class="container">-->
+    <div id="control led" ng-init="init()"><br><br>
+      <div class="row">
+        <div class="col s3">
+          <strong>Controles servo 1</strong>
+          <label>Rango de giro de {[g_s1i]} a {[g_s1f]}</label>
+          <center>
+            <img src="http://localhost:4000/img/engine.png">
+            <input type="number" ng-model="m_angulo" placeholder="Introduce angulo" ng-blur="blurA(m_angulo,1)">
+          </center>
+        </div>
+        <div class="col s3">
+          <strong>Controles servo 2</strong>
+          <label>Rango de giro de {[g_s2i]} a {[g_s2f]}</label>
+          <center>
+            <img src="http://localhost:4000/img/engine.png">
+            <input type="number" ng-model="m_angulo2" placeholder="Introduce angulo" ng-blur="blurA(m_angulo2,2)">
+          </center>
+        </div>
+        <div class="col s3">
+          <strong>Controles servo 3</strong>
+          <label>Rango de giro de {[g_s3i]} a {[g_s3f]}</label>
+          <center>
+            <img src="http://localhost:4000/img/engine.png">
+            <input type="number" ng-model="m_angulo3" placeholder="Introduce angulo" ng-blur="blurA(m_angulo3,3)">
+          </center>
+        </div>
+        <div class="col s3">
+          <strong>Controles servo 4</strong>
+          <label>Rango de giro de {[g_s4i]} a {[g_s4f]}</label>
+          <center>
+            <img src="http://localhost:4000/img/engine.png">
+            <input type="number" ng-model="m_angulo4" placeholder="Introduce angulo" ng-blur="blurA(m_angulo4,4)">
+          </center>
+        </div>
+      </div>
+    </div>
+  <!--</div>-->
+  <!-- Modal Structure -->
+  <div id="jh" class="modal" style="width:80%">
+    <div class="modal-content">
+      <h4>Configuracion de angulos de servos</h4>
+      <center>
+        <img src="http://localhost:4000/img/confi.png" alt="">
+      </center><br>
+      <label for="">Servo 1</label>
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="number" type="number" class="validate" ng-model="m_servo.s1i" ng-blur="blurVA(m_servo.s1i)" >
+          <label for="email">Angulo inicial</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="number" type="number" class="validate" ng-model="m_servo.s1f" ng-blur="blurVA(m_servo.s1f)" >
+          <label for="email">Angulo final</label>
+        </div>
+      </div>
+      <label for="">Servo 2</label>
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="number" type="number" class="validate" ng-model="m_servo.s2i" ng-blur="blurVA(m_servo.s2i)" >
+          <label for="email">Angulo inicial</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="number" type="number" class="validate" ng-model="m_servo.s2f" ng-blur="blurVA(m_servo.s2f)" >
+          <label for="email">Angulo final</label>
+        </div>
+      </div>
+      <label for="">Servo 3</label>
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="number" type="number" class="validate" ng-model="m_servo.s3i" ng-blur="blurVA(m_servo.s3i)" >
+          <label for="email">Angulo inicial</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="number" type="number" class="validate" ng-model="m_servo.s3f" ng-blur="blurVA(m_servo.s3f)" >
+          <label for="email">Angulo final</label>
+        </div>
+      </div>
+      <label for="">Servo 4</label>
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="number" type="number" class="validate" ng-model="m_servo.s4i" ng-blur="blurVA(m_servo.s4i)" >
+          <label for="email">Angulo inicial</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="number" type="number" class="validate" ng-model="m_servo.s4f" ng-blur="blurVA(m_servo.s4f)" >
+          <label for="email">Angulo final</label>
+        </div>
+      </div>
+      <label for="">Servo 5</label>
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="number" type="number" class="validate" ng-model="m_servo.s5i" ng-blur="blurVA(m_servo.s5i)" >
+          <label for="email">Angulo inicial</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="number" type="number" class="validate" ng-model="m_servo.s5f" ng-blur="blurVA(m_servo.s5f)" >
+          <label for="email">Angulo final</label>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action waves-effect waves-green btn-flat" ng-click="btnAgregarAngulos(m_servo)" ng-disabled="disabled_input_confi">Aceptar</a>
+    </div>
+  </div>
+</div>
